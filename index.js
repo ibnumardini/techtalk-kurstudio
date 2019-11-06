@@ -17,6 +17,14 @@ app.get('/', (req, res) => {
   res.render('home', {menu:'home'})
 })
 
+app.get('/about', (req, res) => {
+  res.render('about', {menu:'about'})
+})
+
+app.get('/contact', (req, res) => {
+  res.render('contact', {menu:'contact'})
+})
+
 app.get('/api/users', function(req, res){
   // res.send(users)
   res.json(users)
